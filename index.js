@@ -13,7 +13,7 @@ $(function(){
     spaceBetween: 30,
     loop:true,
     autoplay: {
-      delay: 3000,
+      delay: 2500,
       disableOnInteraction: false,
       // 컨트롤하고나서 움직일 것인가 아닐것인가
     },
@@ -31,7 +31,7 @@ $(function(){
     spaceBetween: 30,
     loop:true,
     autoplay: {
-      delay: 3000,
+      delay: 2500,
       disableOnInteraction: false,
     },
     pagination: {
