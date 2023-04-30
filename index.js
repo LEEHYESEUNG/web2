@@ -1,12 +1,14 @@
 $(function(){
-
+// a 태그 click 이벤트
+    $('a').click(function(e){
+      e.preventDefault();
+    });
+    
 // 언어선택 영역
     $('#btnGo').click(function(){
       url = $('#lang').val();
       window.open(url)
     })
-
-
 
 // swiper
   const visualTop = new Swiper(".visual-slide1", {
@@ -98,8 +100,6 @@ $('.visual-area .link-slide').click(function(e){
       }
     });
 
-
-
 // 하단 광고 슬라이드 영역
  const adSlide = new Swiper(".ad-slide", {
     slidesPerView: 3,
@@ -131,8 +131,6 @@ $('.ad-area .autoplay').click(function(e){
     $(this).addClass('active');
   }
 });
-   
-
 
 // 하단 기관 선택 영역
 $('.organization-list .btn-organization').click(function(){
@@ -158,7 +156,6 @@ $('.sub-list li:first-child a').keydown(function(e){
     $('.btn-organization').removeClass('on');
     $('.sub-organization').stop().slideUp();    
   }
-
 });
 
 $('.sub-list li:last-child a').keydown(function(e){
@@ -171,7 +168,6 @@ $('.sub-list li:last-child a').keydown(function(e){
   }
 
 });
-
     
   //  상위버튼 영역
   $(window).scroll(function(){
