@@ -62,9 +62,11 @@
 /*************** section : info ***************/
 .info-area{ margin-top: 35px; background: #eff4f8; }
 .info-area .info-list{ width: 1152px; margin: 0 auto; display: flex; justify-content: space-between; position: relative; }
+.info-area .info-list .info-item{ position: relative; }
+.info-area .info-list .info-item::before{ content: ''; position: absolute; display: inline-block; width: 1px; height: 60px; background: #dbdbdb; top: 50%; right: 0; transform: translateY(-50%); }
+.info-area .info-list .info-item:last-child::before{ display: none; }
 .info-area .info-list .link-info{ display: block; }
 .info-area .info-list img{ width: 288px; padding: 20px 0;}
-.info-area .bar{ margin: 25px 0; width: 1px; height: 60px; background: #dbdbdb; }
 /*************** section : event / festival ***************/
 .board-gruop{ box-sizing: border-box; padding: 50px 0 50px; border-bottom: 2px solid #222222; display: flex; justify-content: space-between; }
 .board-gruop section{ width: 360px; float: left; }
